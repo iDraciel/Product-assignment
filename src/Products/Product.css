@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1{
+    text-align: center;
+      font-weight: 500;
+   
+      color:white;
+  }
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width:  calc(25% - 16px);
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  @media screen and (min-width:300px) and (max-width:768px){
+    h1{
+      font-size: 18px;
+      text-align: center;
+        font-weight: 300;
+        margin-top: -10px;
+    
+       
+    }
+  }
+  /* Responsive columnss */
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin:8px 5px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  .card:hover {
+    transform: scale(1.03);
+  }
+  .image{
+      width:100%;
+  }
+  
+  .button-link{
+      text-decoration: none;
+      color: black;
+  }
+  .iframe-style{
+    width:300px;
+    height:300px;
+    text-decoration: none;
+  }
+
+
+  .learn-more{
+    background-color: #e84c3d; 
+    border: none;
+    color: white;
+    border-radius: 2px;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  
+  }
+  .learn-more:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  @media screen and (max-width:768px){
+    .learn-more{
+        font-size:12px;
+        padding:8px 16px;
+        margin:2px;
+    }
+    
+}
